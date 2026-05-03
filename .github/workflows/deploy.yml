@@ -26,6 +26,7 @@ jobs:
 
 
       - run: echo "VITE_API_BASE=https://moonlark-api.itcdt.top/chat/blog" > .env
+      - run: npm install
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
